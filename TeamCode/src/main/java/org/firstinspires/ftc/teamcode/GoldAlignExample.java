@@ -84,8 +84,9 @@ public class GoldAlignExample extends OpMode
 
     @Override
     public void loop() {
-        telemetry.addData("IsAligned" , detector.getAligned()); // Is the bot aligned with the gold mineral
         telemetry.addData("X Pos" , detector.getXPosition()); // Gold X pos.
+        telemetry.addData("Is Found", detector.isFound()); //Can you see the mineral
+
     }
 
     /*
